@@ -3,6 +3,7 @@ const login = require("./login");
 const getCurrent = require("./getCurrent");
 const logout = require("./logout");
 const updateSubscription = require("./updateSubscription");
+const updateAvatar = require("./updateAvatar");
 const { controllerWrap } = require("../../helpers");
 
 module.exports = {
@@ -11,4 +12,5 @@ module.exports = {
   getCurrent: controllerWrap(getCurrent),
   logout: controllerWrap(logout),
   updateSubscription: controllerWrap(updateSubscription),
+  updateAvatar: controllerWrap(updateAvatar),
 };
